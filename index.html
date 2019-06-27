@@ -1,0 +1,62 @@
+<!--
+Thanks to Dragula for drag and drop functionality
+https://bevacqua.github.io/dragula/
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dragula Example</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dragula.css">
+  </head>
+  <body>
+
+
+    <div id="left">
+      <div class="taskBox l-red">
+        <div class="red square movable">This is a square div.</div>
+        <p class="red para movable">This is a paragraph.</p>
+        <h1 class="red header movable">3</h1>
+      </div>
+      <div class="taskBox l-green">
+        <div class="green square movable">This is a square div.</div>
+        <p class="green para movable">This is a paragraph.</p>
+        <h1 class="green header movable">3</h1>
+      </div>
+      <div class="taskBox l-blue">
+        <div class="blue square movable">This is a square div.</div>
+        <p class="blue para movable">This is a paragraph.</p>
+        <h1 class="blue header movable">3</h1>
+      </div>
+    </div>
+
+
+    <div id="right">
+      <h1>
+        Making drag and drop apps with Dragula
+      </h1>
+
+      <p>
+        This is an example app that uses the <a href="https://github.com/bevacqua/dragula">Dragula</a> framework for simple, non-persistent drag and drop functionality.
+      </p>
+      <p>
+        You can add new dragable elements, or drag-to/drag-from areas with css classes.
+      </p>
+      <ul>
+        <li>Adding the class "box" to any HTML element will make that a place you can drag things into.</li>
+        <li>Any child element of a "box" class element is draggable into any other "box" class element.</li>
+        <li>You can use your own css classes by changing the script.js file.</li>
+      </ul>
+    </div>
+
+
+    <script src="dragula.js"></script>
+    <script src="drag-script.js"></script>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
